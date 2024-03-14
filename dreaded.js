@@ -15,7 +15,7 @@ const ytdl = require("ytdl-core");
  const Client = new Genius.Client("jKTbbU-6X2B9yWWl-KOm7Mh3_Z6hQsgE4mmvwV3P3Qe7oNa9-hsrLxQV5l5FiAZO"); // Scrapes if no key is provided
 const { fetchUrl, isUrl, processTime } = require("./lib/dreadfunc");
 const { TelegraPh, UploadFileUgu, webp2mp4File, floNime } = require('./lib/dreadupload');
-const { Configuration, OpenAIApi } = require("openai");
+const { Configuration, OpenAIApi } = require("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");
 let setting = process.env.AI; 
 const { smsg, formatp, tanggal, formatDate, getTime,  sleep, clockString, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/dreadfunc');
 const { exec, spawn, execSync } = require("child_process");
@@ -43,12 +43,12 @@ module.exports = dreaded = async (client, m, chatUpdate, store) => {
    // leave the prefix string empty if you don't want the bot to use a prefix
     const prefix = process.env.PREFIX || '.';
 const Heroku = require("heroku-client");  
- const appname = process.env.APP_NAME || '';
- const herokuapi = process.env.HEROKU_API;
+ const appname = process.env.APP_NAME || 'dreadedsilivon';
+ const herokuapi = process.env.HEROKU_API || 'd19e0131-14e9-4b12-ba09-1b7802933f86'; 
 const gptdm = process.env.GPT_INBOX || 'FALSE';
     const cmd = body.startsWith(prefix);
 //const autobio = process.env.AUTOBIO || 'FALSE';
-const botname = process.env.BOTNAME || 'Gifted Dreaded Bot';
+const botname = process.env.BOTNAME || '𝙏𝞖𝞢 𝘿𝞢𝝯𝞘𝙇𝙎 𝞑𝞗𝙏';
 const antibot = process.env.ANTIBOT || 'FALSE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
@@ -80,16 +80,16 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     };
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
-    const author = process.env.STICKER_AUTHOR || 'GiftedTech';
+    const author = process.env.STICKER_AUTHOR || '𝙏𝞖𝞢 𝘿𝞢𝝯𝞘𝙇';
 const maindev = '254114018035';
 const maindev2 = maindev.split(",");
 
-    const packname = process.env.STICKER_PACKNAME || 'DreadedBot';
-const dev = process.env.DEV || '254728782591'
+    const packname = process.env.STICKER_PACKNAME || '𝞑𝞢𝙇𝞗𝞜𝙂𝙎 𝙏𝞗';
+const dev = process.env.DEV || '2349063382597'
 
-const menu = process.env.MENU_TYPE || 'VIDEO';
+const menu = process.env.MENU_TYPE || 'IMAGE';
  const DevDreaded = dev.split(",");
-    const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
+    const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
     const autoread = process.env.AUTOREAD || 'FALSE';
     const badword = bad.split(",");
@@ -101,13 +101,13 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
      const groupAdmin = m.isGroup ? await getGroupAdmins(participants) : ""; 
      const isBotAdmin = m.isGroup ? groupAdmin.includes(botNumber) : false; 
      const isAdmin = m.isGroup ? groupAdmin.includes(m.sender) : false;
-const admin = process.env.ADMIN_MSG || 'Are you an admin?';
-    const group = process.env.GROUP_ONLY_MSG || 'Feature is for Group Only';
-    const botAdmin = process.env.BOT_ADMIN_MSG || 'Bot is not Admi dmin'
-    const NotOwner = process.env.NOT_OWNER_MSG || 'You are not the Bot Owner';
-const wapresence = process.env.WA_PRESENCE || 'recording';
-const antilink = process.env.ANTILINK || 'FALSE';
-const antilinkall = process.env.ANTILINK_ALL || 'FALSE';
+const admin = process.env.ADMIN_MSG || 'You know the bot is not an admin?';
+    const group = process.env.GROUP_ONLY_MSG || 'Is this a Group Idiot';
+    const botAdmin = process.env.BOT_ADMIN_MSG || 'Oga Admin me '
+    const NotOwner = process.env.NOT_OWNER_MSG || 'You are not my owner ';
+const wapresence = process.env.WA_PRESENCE || '';
+const antilink = process.env.ANTILINK || 'TRUE';
+const antilinkall = process.env.ANTILINK_ALL || 'TRUE';
 
 function _0xfb25(_0x4763fd, _0xf70ff) {
     const _0x6abf0e = _0x1492();
@@ -540,7 +540,7 @@ let cap = `╭════〘 𝗗𝗥𝗘𝗔𝗗𝗘𝗗 〙═⊷❍
        
 
 ╰═══════════════⊷❍`;
-if (menu === 'VIDEO') {
+if (menu === 'IMAGE') {
 
                    client.sendMessage(m.chat, {
                         video: fs.readFileSync('./menu.mp4'),
@@ -553,7 +553,7 @@ if (menu === 'VIDEO') {
 client.sendMessage(from, { text: cap}, {quoted: m})
 
 } else if (menu === 'IMAGE') {
-client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/54efddccf41281ad7ec51.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
+client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/2c22c342be2090d59ebd3.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
 } else if (menu === 'LINK') {
 client.sendMessage(m.chat, {
                         text: cap,
